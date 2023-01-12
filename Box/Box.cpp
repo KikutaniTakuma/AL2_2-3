@@ -5,7 +5,7 @@
 
 Box::Box(Camera* camera, Vector2D pos):
 	Object(camera),
-	blend(BlendMode::kBlendModeNormal),
+	blend(BlendMode::kBlendModeAdd),
 	flg(false),
 	alpha(128)
 {
@@ -14,7 +14,7 @@ Box::Box(Camera* camera, Vector2D pos):
 
 Box::Box(Camera* camera, Vector2D pos, bool flg) :
 	Object(camera),
-	blend(BlendMode::kBlendModeNormal),
+	blend(BlendMode::kBlendModeAdd),
 	flg(flg),
 	alpha(128)
 {
